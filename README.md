@@ -1,104 +1,108 @@
-# 🚗 Driver Drowsiness Detection using Deep Learning
+<div align="center">
 
-## 📌 Overview
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:141E30,100:243B55&height=200&section=header&text=Driver%20Drowsiness%20System&fontSize=35&fontColor=ffffff"/>
 
-This project detects driver drowsiness in real-time using computer vision and deep learning.
-The system monitors the driver's eyes through a webcam and triggers an alert if drowsiness is detected.
+### 🚗 Real-Time Driver Monitoring using AI & Computer Vision  
 
-## 🎯 Problem Statement
+<img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&center=true&vCenter=true&lines=Detecting+Fatigue+in+Real-Time;Computer+Vision+Project;AI+Safety+System"/>
 
-Driver fatigue is one of the major causes of road accidents.
-This system helps in reducing accidents by detecting eye closure and alerting the driver instantly.
+<img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python"/>
+<img src="https://img.shields.io/badge/OpenCV-Vision-green?style=for-the-badge&logo=opencv"/>
+<img src="https://img.shields.io/badge/TensorFlow-AI-orange?style=for-the-badge&logo=tensorflow"/>
 
-## 🧠 Approach
+</div>
 
-The system works in the following steps:
 
-1. Capture real-time video using webcam
-2. Detect face using Haar Cascade
-3. Detect left and right eyes
-4. Preprocess eye images
-5. Predict eye state (Open/Closed) using CNN model
-6. Trigger alert if eyes remain closed for a certain duration
+## 🧠 About the Project  
 
-## 🛠️ Technologies Used
+This is a **real-time driver drowsiness detection system** built using computer vision and deep learning.  
 
-* Python
-* TensorFlow / Keras
-* OpenCV
-* NumPy
+It continuously monitors the driver's eyes through a webcam and triggers alerts when signs of fatigue are detected.  
 
-## 📁 Project Structure
+> ⚠️ Designed as a safety-focused system to reduce accident risk caused by drowsy driving.
 
-```
-Driver_Drowsiness_Detection_AI/
-│
-├── detect_drowsiness_refactored.py        # Main execution file
-├── drowiness_new7.h5           # Trained CNN model
-├── model_training.ipynb        # Model training (optional)
-├── README.md
-├── requirements.txt
-│
-├── data/
-│   ├── alarm.mp3
-│   ├── haarcascade_frontalface_default.xml
-│   ├── haarcascade_lefteye_2splits.xml
-│   └── haarcascade_righteye_2splits.xml
-```
 
-## ▶️ How to Run
+## ⚡ Key Features  
 
-1. Clone the repository
+```diff
++ Real-time face & eye tracking
++ CNN-based eye state classification
++ Instant drowsiness alert (sound + recording)
++ FPS + status monitoring
++ Lightweight and fast
 
-```
-git clone <your-repo-link>
-cd Driver_Drowsiness_Detection_AI
-```
+```Works
+Detects face using OpenCV
+Extracts eye regions using cascade classifiers
+Passes eye images into CNN model
+Tracks eye state over frames
+If eyes remain closed → triggers alert system.
 
-2. Create virtual environment
+```clone 
 
-```
-python -m venv venv
-venv\Scripts\activate
-```
+git clone https://github.com/mallikarjun-reddy-13/driver_drowsiness_system.git
+cd driver_drowsiness_system
 
-3. Install dependencies
+venv310\Scripts\activate.bat
+pip install -r requirements_clean.txt
 
-```
-pip install -r requirements.txt
-```
+python detect_face_drowsiness_fixed.py
 
-4. Run the project
+Project Structure
+driver_drowsiness_system/
+│── detect_face_drowsiness_fixed.py
+│── drowiness_new7.h5
+│── data/
+│── requirements_clean.txt
+│── steps.md
 
-```
-python detect_drowsiness_refactored.py
-```
+🧪 Testing the System
+Start the program
+Sit in front of webcam
+Close your eyes for a few seconds
+Expected Output:
+🔴 “DROWSY” alert
+🔊 Alarm sound
+🎥 Recording starts
 
-## 🚀 Features
+📊 Model Details
+CNN trained on eye dataset
+Input: 145×145 grayscale images
+Output classes: 0–3 (3 = open)
+Pre-trained .h5 model included
 
-* Real-time face and eye detection
-* Deep learning-based eye classification
-* Alert system using sound
-* Frame-based drowsiness detection
-* Lightweight and easy to run
+🔧 Troubleshooting
+<details> <summary>Common Issues</summary>
 
-## ⚠️ Limitations
+Missing modules
 
-* Performance depends on lighting conditions
-* May misdetect when face is not clearly visible
-* Accuracy depends on trained dataset
+pip install opencv-python tensorflow
 
-## 🔮 Future Improvements
+VSCode errors
 
-* Use advanced models (ResNet, MobileNet)
-* Add head pose detection
-* Improve accuracy with larger dataset
-* Build web UI using Streamlit
-* Deploy on embedded systems
+Select correct interpreter (venv310)
+Reload window
 
-## 📌 Conclusion
+Camera issue
 
-This project demonstrates how AI and computer vision can be used to build real-time safety systems.
-It highlights the practical application of deep learning in preventing accidents.# driver_drowsiness_system
-# driver_drowsiness_system
-# driver_drowsiness_system
+cv2.VideoCapture(1)
+
+No sound
+Check data/alarm.mp3
+
+</details>
+
+
+🙌 Final Thoughts
+
+Built through real debugging, testing, and iteration.
+Not perfect — but functional and extensible.
+
+If this helped you, consider giving a ⭐
+
+<div align="center">
+
+💡 Built for safety, learning, and real-world application
+
+</div> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:243B55,100:141E30&height=120&section=footer"/>
+
