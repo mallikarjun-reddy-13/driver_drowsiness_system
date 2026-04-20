@@ -1,0 +1,8 @@
+opencv-python
+numpy
+matplotlib
+tensorflow
+keras
+pygame
+h5py
+
