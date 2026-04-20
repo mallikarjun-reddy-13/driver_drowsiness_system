@@ -100,3 +100,4 @@ python detect_drowsiness_refactored.py
 
 This project demonstrates how AI and computer vision can be used to build real-time safety systems.
 It highlights the practical application of deep learning in preventing accidents.# driver_drowsiness_system
+# driver_drowsiness_system
