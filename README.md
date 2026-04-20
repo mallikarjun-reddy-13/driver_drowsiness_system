@@ -105,4 +105,3 @@ If this helped you, consider giving a ⭐
 💡 Built for safety, learning, and real-world application
 
 </div> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:243B55,100:141E30&height=120&section=footer"/>
-
